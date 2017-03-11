@@ -27,7 +27,7 @@
     "build": "webpack --progress",
     "build-production-single": "set NODE_ENV=production-single&&webpack -p --progress --colors",
     "build-production-multi": "set NODE_ENV=production-multi&&webpack -p --progress --colors",
-    "start": "webpack",
+    "start": "node app\/debug.js",
     "webpack": "webpack --watch"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "style-loader": "^0.13.1",
-    "webpack": "^2.2.0-rc.3",
+    "webpack": "^2.2.0",
     "webpack-uglify-js-plugin": "1.1.9",
     "ejs-loader": "^0.3.0",
     "underscore-template-loader": "0.7.3",
