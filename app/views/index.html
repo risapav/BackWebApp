@@ -16,41 +16,6 @@ Compiled under Webpack 2 tools
 </div>
 
 
-<form action="#" method="POST" id="f">
-    <div>
-        <div>Login name:</div>
-        <div><input type="text" name="email" value="@{model.email}" maxlength="200" /></div>
-    </div>
-    <br />
-    <div>
-        <div>Login password:</div>
-        <div><input type="text" name="password" value="" maxlength="30" /></div>
-    </div>
-    <div id="error"></div>
-</form>
-<br />
-<button>Submit</button>
-
-	<script>
-		$(document).ready(function() {
-			$('button').bind('click', function() {
-				$.post('/?ts=' + Date.now(), $('#f').serialize(), function(d) {
-					var err = $('#error');
-					if (d instanceof Array) {
-						err.empty();
-						d.forEach(function(o) {
-							err.append('<div>' + o.error + '</div>');
-						});
-						err.show();
-						return;
-					};
-					err.hide();
-					window.location.href = '/';
-				});
-			});
-		});
-	</script>
-
 <div id="dialog"></div>
 <footer id="footer" class="footer">
     Loading... footer

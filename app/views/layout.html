@@ -17,11 +17,12 @@ Compiled under Webpack 2 tools
     @{import('meta', 'head', 'default.css', 'favicon.ico')}
     <!-- Bootstrap -->
     @{import('bootstrap.min.css', 'bootstrap-theme.min.css')}
-    @{import('bootstrap.min.js','jquery.min.js')}
+<!--     @{import('bootstrap.min.js','jquery.min.js')} -->
 </head>
 <body>
     <div id="app" class="container-background">
         @{body}
     </div>
+    @{import('vendor.js','main.js')}
 </body>
 </html>
