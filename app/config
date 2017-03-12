@@ -9,3 +9,8 @@ mail.smtp.options               : {"secure":false,"port":25,"user":"","password"
 mail.address.from               : your@yourwebsite.com
 mail.address.reply              : your@yourwebsite.com
 mail.address.bcc                :
+
+//palo settings
+allow-compile-html  : false
+allow-compile-script: false
+allow-compile-style : false
