@@ -14,15 +14,15 @@ Compiled under Webpack 2 tools
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="all,follow" />
-    @{import('meta', 'head', 'default.css', 'favicon.ico')}
+    @{import('meta', 'head', 'favicon.ico')}
     <!-- Bootstrap -->
-    @{import('bootstrap.min.css', 'bootstrap-theme.min.css')}
-<!--     @{import('bootstrap.min.js','jquery.min.js')} -->
+    @{import('bootstrap.css','default.css')}
 </head>
 <body>
-    <div id="app" class="container-background">
-        @{body}
-    </div>
-    @{import('vendor.js','main.js')}
+    <div id="root" class="container-background"></div>
+    
+    <script src="commons.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+
 </body>
 </html>

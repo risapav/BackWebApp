@@ -1,4 +1,4 @@
-{"id":1,"email":"petersirka@gmail.com","password":"123456"}
-{"id":2,"email":"risapav@gmail.com","password":"123456"}
-{"id":3,"email":"risapav@pobox.sk","password":"123456"}
-{"id":4,"email":"risapav@pobox.sk","password":"123456"}
+{"id":1,"name":"jano","pswd":"123456","role":"user"}
+{"id":2,"name":"palo","pswd":"123456","role":"guest"}
+{"id":3,"name":"peter","pswd":"123456","role":"super"}
+{"id":4,"name":"juro","pswd":"123456","role":"admin"}

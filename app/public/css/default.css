@@ -1,16 +1,86 @@
-/*auto*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12.3.2017, 19:41:41
+    Author     : Pavol
+*/
 
-$color    : #67B13D;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
 
-body { padding:0; margin:0; font:normal 14px Arial; color:#656D78; background-color: #67B13D; line-height: 20px; }
 
-.container-background { background-color: white; }
-.container { margin:0 auto; width: 960px; padding: 50px 0; }
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
 
-.center { text-align: center; }
-hr { border: 0; border-top: 1px solid #E0E0E0; }
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
 
-.linkbutton { display: inline-block; position: relative; padding: 15px 80px; color: $color; border: 1px solid $color; text-decoration: none; border-radius: 4px; }
-.linkbutton:hover { color: white; background-color: $color; }
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
-footer { color: white; text-align: center; margin-top: 20px; }
+code {
+  font-size: 80%;
+}
+
+/* flexigrid */
+.flexigrid {
+    height: 200%;
+}
+
+/* loader */
+/* Center the loader */
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+/*  border-right: 16px solid green; */
+/* border-left: 16px solid green; */
+  border-bottom: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

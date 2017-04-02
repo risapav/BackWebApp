@@ -4,7 +4,9 @@ exports.install = function() {
         
 	F.route('/', json_login, ['post', '*User']);
         F.route('/login/', view_login);
-	F.route('/logout/', logout, ['authorize']);
+        F.route('/logout/', json_logout, ['post']);
+        F.route('/create/', json_logout, ['post']);
+//	F.route('/logout/', logout, ['authorize']);
 };
 
 function view_logged() {
@@ -27,8 +29,15 @@ function json_login() {
 	self.body.$workflow('login', self, self.callback());
 }
 
-function logout() {
+function json_logout() {
 	var self = this;
 	self.res.cookie(F.config.cookie, '', new Date().add('-1 year'));
+
+        var obj = {
+            auth: { role: 'user' },
+            msg: { type: 'info', text: 'Úspešne si sa odhlásil' }
+        };
+
+        self.json(obj);    
 	self.redirect('/');
 }

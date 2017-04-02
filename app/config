@@ -1,7 +1,7 @@
 name                            : Total.js
 author                          : Pavol Risa
 version                         : 1.0.0
-secret                          : secret-key-for-web
+secret                          : 12gB45..123_j
 
 // Mail settings
 mail.smtp                       : smtp.yourwebsite.com
