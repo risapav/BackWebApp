@@ -1,0 +1,16 @@
+name                            : Total.js
+author                          : Pavol Risa
+version                         : 1.0.0
+secret                          : 12gB45..123_j
+
+// Mail settings
+mail.smtp                       : smtp.yourwebsite.com
+mail.smtp.options               : {"secure":false,"port":25,"user":"","password":"","timeout":10000}
+mail.address.from               : your@yourwebsite.com
+mail.address.reply              : your@yourwebsite.com
+mail.address.bcc                :
+
+//palo settings
+allow-compile-html  : false
+allow-compile-script: false
+allow-compile-style : false

@@ -1,0 +1,4 @@
+{"id":1,"name":"jano","pswd":"123456","role":"user"}
+{"id":2,"name":"palo","pswd":"123456","role":"guest"}
+{"id":3,"name":"peter","pswd":"123456","role":"super"}
+{"id":4,"name":"juro","pswd":"123456","role":"admin"}
